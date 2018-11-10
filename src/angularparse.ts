@@ -1,6 +1,6 @@
 import { Injectable, Inject, Optional, InjectionToken, NgModule } from '@angular/core';
-import { AngularParseObject } from './object/object';
-import { AngularParseQuery } from './query/query';
+import { AngularParseObject } from 'object/object';
+import { AngularParseQuery } from 'query/query';
 import { ParseAppConfig, ParseAppName, ParseServerURL } from './angularparse.module'
 import * as Parse from 'parse';
 

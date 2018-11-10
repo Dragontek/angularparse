@@ -1,0 +1,35 @@
+{
+  "name": "angularparse",
+  "version": "1.0.0",
+  "description": "Angular library for Parse",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dragontek/angularparse.git"
+  },
+  "keywords": [
+    "angular",
+    "parse",
+    "rxjs"
+  ],
+  "author": "Dragontek Software",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dragontek/angularparse/issues"
+  },
+  "homepage": "https://github.com/dragontek/angularparse#readme",
+  "dependencies": {
+    "@angular/common": ">=6.0.0 <8",
+    "@angular/compiler": ">=6.0.0 <8",
+    "@angular/core": ">=6.0.0 <8",
+    "@angular/platform-browser": ">=6.0.0 <8",
+    "@angular/platform-browser-dynamic": ">=6.0.0 <8",
+    "parse": "^2.1.0",
+    "rxjs": "^6.0.0",
+    "ws": "^3.3.2",
+    "xhr2": "^0.1.4",
+    "zone.js": "^0.8.0"
+  }
+}
