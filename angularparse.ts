@@ -21,8 +21,6 @@ export class AngularParse {
     Parse.initialize(config.appName, config.javaScriptKey, config.masterKey)
     // @ts-ignore
     Parse.serverURL = config.serverURL; 
-    //'https://parse-eventpix.dragontek.cloud/parse'
-    //Parse.serverURL = 'http://localhost:1337/parse'
 
     console.log('Parse Initialized');
   }
