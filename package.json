@@ -1,43 +1,11 @@
 {
   "name": "angularparse",
-  "version": "1.0.0",
-  "description": "Angular library for Parse",
-  "scripts": {
-    "test": "npm run build && karma start --single-run",
-    "test:watch": "concurrently \"npm run build:watch\" \"npm run delayed_karma\"",
-    "test:debug": "npm run build && karma start",
-    "karma": "karma start",
-    "test:universal": "npm run build && cp -R dist/packages-dist test/universal-test/node_modules/angularfire2 && cd test/universal-test && npm run prerender",
-    "delayed_karma": "sleep 10 && karma start",
-    "build": "rm -rf dist && node tools/build.js",
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 1",
-    "build:wrapper": "npm i --prefix wrapper && VERSION=5.1.0 npm run --prefix wrapper build"  
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^7.0.0",
+    "@angular/core": "^7.0.0",
+    "@types/parse": "^1.11.3",
+    "parse": "^2.1.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dragontek/angularparse.git"
-  },
-  "keywords": [
-    "angular",
-    "parse",
-    "rxjs"
-  ],
-  "author": "Dragontek Software",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/dragontek/angularparse/issues"
-  },
-  "homepage": "https://github.com/dragontek/angularparse#readme",
-  "dependencies": {
-    "@angular/common": ">=5.0.0 <8",
-    "@angular/compiler": ">=5.0.0 <8",
-    "@angular/core": ">=5.0.0 <8",
-    "@angular/platform-browser": ">=5.0.0 <8",
-    "@angular/platform-browser-dynamic": ">=5.0.0 <8",
-    "parse": "^2.1.0",
-    "rxjs": "^5.0.0",
-    "ws": "^3.3.2",
-    "xhr2": "^0.1.4",
-    "zone.js": "^0.8.0"
-  }
+  "dependencies": {}
 }
